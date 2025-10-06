@@ -5,9 +5,7 @@ int main() {
     int n;
     cout << "Ingrese un numero: ";
     cin >> n;
-    if (n % 2 == 0)
-        cout << "Es par." << endl;
-    else
-        cout << "Es impar." << endl;
+    cout << "Su cuadrado es: " << n * n << endl;
     return 0;
 }
+
