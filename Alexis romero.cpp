@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    
+    // Pedir al usuario que ingrese el número n
+    cout << "Introduce un número entero positivo: ";
+    cin >> n;
+
+    // Comprobar si el número es válido
+    if (n < 1) {
+        cout << "Por favor, ingresa un número positivo mayor que 0." << endl;
+        return 1;
+    }
+
+    // Calcular la suma de los primeros n números naturales
+    int suma = 0;
+    for (int i = 1; i <= n; i++) {
+        suma += i;
+    }
+
+    // Mostrar el resultado
+    cout << "La suma de los primeros " << n << " números naturales es: " << suma << endl;
+
+    return 0;
+}
